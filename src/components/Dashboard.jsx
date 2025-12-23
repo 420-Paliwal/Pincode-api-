@@ -3,14 +3,15 @@ import PincodeLookup from "./PincodeLookup";
 export default function Dashboard({ setUser }) {
   return (
     <div className="container">
-      <button onClick={() => {
+      <div className="main">
+        <button onClick={() => {
         localStorage.removeItem("user");
         setUser(null);
       }}>
         Logout
       </button>
 
-      <hr />
+      </div>
       <PincodeLookup />
     </div>
   );

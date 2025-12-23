@@ -25,7 +25,7 @@ function PincodeLookup() {
 
   return (
     <div>
-      <h2>PIN Code Lookup</h2>
+      <h2>Search PIN Code</h2>
 
       <input
         type="number"
@@ -36,7 +36,7 @@ function PincodeLookup() {
 
       <button onClick={fetchPincodeDetails}>Search</button>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <h2 style={{ color: "red" }}>{error}</h2>}
 
       {postOffices.map((po, index) => (
         <div key={index}>
